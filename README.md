@@ -92,7 +92,7 @@ The **XGBoost model** achieved the highest accuracy and was selected as the fina
 
 ---
 
-## 🔮 Prediction System
+## Prediction System
 
 A prediction function was created to input patient parameters and output the predicted liver cirrhosis stage.
 
@@ -132,21 +132,21 @@ Liver-Cirrhosis-Stage-Detection/
 
 ##  How to Run the Project
 
-1️⃣ Clone the repository:
+1️. Clone the repository:
 
 ```
 git clone https://github.com/your-username/liver-cirrhosis-ml.git
 ```
 
-2️⃣ Install dependencies:
+2️. Install dependencies:
 
 ```
 pip install pandas numpy matplotlib seaborn scikit-learn xgboost joblib
 ```
 
-3️⃣ Open the notebook in Google Colab or Jupyter Notebook.
+3️. Open the notebook in Google Colab or Jupyter Notebook.
 
-4️⃣ Run all cells sequentially.
+4️. Run all cells sequentially.
 
 ---
 
@@ -158,10 +158,6 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost joblib
 * Deep learning approaches for advanced prediction
 ---
 ## Project Resources
-
-- Dataset: Mayo Clinic Liver Cirrhosis Dataset
-- Tools: Python, Google Colab
-- Libraries: Pandas, NumPy, Scikit-learn, XGBoost, Matplotlib, Seaborn
 - Google Colab Notebook: [Open Notebook](https://colab.research.google.com/drive/1V9HnnojkCVS_4wuo3QliRHFQHVt0iwjL?usp=sharing)
 
 ---
