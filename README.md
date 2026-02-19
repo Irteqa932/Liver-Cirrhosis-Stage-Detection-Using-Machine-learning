@@ -2,56 +2,70 @@
 
 ## Project Overview
 
-Liver cirrhosis is a chronic liver disease characterized by progressive liver damage that can lead to severe health complications if not diagnosed early. Accurate staging of the disease is essential for treatment planning and patient management.
+```
+Accuracy: 96.12% | Dataset: 25K Records | Model: XGBoost
+```
 
-This project develops a machine learning–based predictive system that determines the stage of liver cirrhosis using patient diagnosis data, including clinical indicators and laboratory test results. The system aims to assist healthcare professionals in faster and more accurate decision-making.
+Liver cirrhosis is a chronic liver disease characterized by progressive liver damage that can lead to severe health complications if not diagnosed early. Accurate staging of the disease is essential for effective treatment planning and patient management.
+
+This project develops a machine learning–based predictive system to determine the stage of liver cirrhosis using patient diagnosis data, including laboratory test results and clinical indicators. The system aims to assist healthcare professionals in faster and more accurate decision-making.
+
+---
+
+## Project Highlights
+
+*  Dataset Size: **25,000 patient records**
+*  Machine Learning Models: Logistic Regression, Decision Tree, Random Forest, XGBoost
+*  Best Model: **XGBoost Classifier**
+*  Accuracy Achieved: **96.12%**
+*  Feature Importance Analysis Performed
+*  Prediction System Implemented
 
 ---
 
 ## Objectives
 
-- Predict liver cirrhosis stage using patient medical data
-- Perform data preprocessing and exploratory analysis
-- Train and compare multiple machine learning models
-- Evaluate performance using standard metrics
-- Identify important medical features influencing disease progression
+* Predict liver cirrhosis stages using patient clinical data
+* Perform data preprocessing and exploratory analysis
+* Train and compare multiple machine learning models
+* Evaluate model performance using standard metrics
+* Identify key medical features influencing disease progression
 
 ---
 
 ## Dataset Information
 
-- Total Records: **25,000 patients**
-- Features: **19 medical attributes**
-- Target Variable: **Stage (1, 2, 3)**
+The dataset contains clinical and laboratory data of patients, including:
 
-Features include:
-
-- Demographics (Age, Sex)
-- Clinical indicators (Ascites, Hepatomegaly, Edema)
-- Laboratory tests (Bilirubin, Albumin, Platelets, Cholesterol, etc.)
+* Age, Sex
+* Ascites, Hepatomegaly, Edema
+* Bilirubin, Albumin, Cholesterol
+* Platelets, Prothrombin
+* Drug Type and Status
+* Target Variable: **Stage (1, 2, 3)**
 
 ---
 
 ## Technologies Used
 
-- Python
-- Google Colab
-- Pandas & NumPy
-- Matplotlib & Seaborn
-- Scikit-learn
-- XGBoost
-- Joblib
+* Python
+* Google Colab / Jupyter Notebook
+* Pandas & NumPy
+* Matplotlib & Seaborn
+* Scikit-learn
+* XGBoost
+* Joblib
 
 ---
 
 ## Machine Learning Models Implemented
 
-The following models were trained and compared:
+The following classification algorithms were trained and compared:
 
-- Logistic Regression
-- Decision Tree
-- Random Forest
-- XGBoost
+* Logistic Regression
+* Decision Tree Classifier
+* Random Forest Classifier
+* XGBoost Classifier
 
 ---
 
@@ -59,30 +73,30 @@ The following models were trained and compared:
 
 Model performance comparison:
 
-| Model | Accuracy |
-| --- | --- |
-| Logistic Regression | 60.08% |
-| Decision Tree | 91.62% |
-| Random Forest | 95.72% |
-| XGBoost | **96.12%** |
+| Model               | Accuracy   |
+| ------------------- | ---------- |
+| Logistic Regression | 60.08%     |
+| Decision Tree       | 91.62%     |
+| Random Forest       | 95.72%     |
+| XGBoost             | **96.12%** |
 
-The **XGBoost classifier** achieved the highest accuracy and was selected as the final model.
-
----
-
-## Key Insights
-
-- Ensemble models performed significantly better than linear models.
-- Clinical features such as bilirubin, albumin, platelets, and prothrombin time showed strong influence on disease stage prediction.
-- The model demonstrated excellent capability in identifying disease severity from patient data.
+The **XGBoost model** achieved the highest accuracy and was selected as the final model.
 
 ---
 
-## Prediction System
+##  Key Insights
 
-A prediction function was developed that takes patient medical parameters as input and outputs the predicted liver cirrhosis stage.
+* Ensemble models significantly outperformed linear models.
+* Clinical parameters such as bilirubin, albumin, platelets, and prothrombin time showed strong influence on disease severity.
+* The trained model demonstrated excellent capability in predicting liver cirrhosis stages from patient data.
 
-Example Output:
+---
+
+## 🔮 Prediction System
+
+A prediction function was created to input patient parameters and output the predicted liver cirrhosis stage.
+
+Example:
 
 ```
 Predicted Stage: 0
@@ -90,39 +104,57 @@ Predicted Stage: 0
 
 ---
 
-## Model Saving
+## Model Files
 
-The trained model and scaler were saved for deployment:
+Due to file size limitations, trained model files are not included in the repository.
+
+You can generate them by running the notebook. The following files will be created automatically:
 
 ```
 liver_model.pkl
 scaler.pkl
 ```
 
-## How to Run the Project
+---
 
-1. Clone the repository:
+##  Project Structure
+
+```
+Liver-Cirrhosis-Stage-Detection/
+│
+├── liver_cirrhosis.csv
+├── Liver_Cirrhosis_Stage_Detection.ipynb
+├── README.md
+└── requirements.txt
+```
+
+---
+
+##  How to Run the Project
+
+1️⃣ Clone the repository:
 
 ```
 git clone https://github.com/your-username/liver-cirrhosis-ml.git
 ```
 
-1. Open the notebook in Google Colab or Jupyter Notebook.
-2. Install dependencies:
+2️⃣ Install dependencies:
 
 ```
 pip install pandas numpy matplotlib seaborn scikit-learn xgboost joblib
 ```
 
-1. Run all cells.
+3️⃣ Open the notebook in Google Colab or Jupyter Notebook.
+
+4️⃣ Run all cells sequentially.
 
 ---
 
-## Future Improvements
+##  Future Improvements
 
-- Hyperparameter tuning
-- Web deployment using Streamlit
-- Integration with healthcare systems
-- Deep learning approaches
+* Hyperparameter tuning for improved performance
+* Deployment using Streamlit or Flask
+* Integration with healthcare systems
+* Deep learning approaches for advanced prediction
 
 ---
